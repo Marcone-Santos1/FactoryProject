@@ -71,5 +71,27 @@ class RelationshipAnalyzer
 $ Digite a relação com a FATEC:
 ````
 
-E quando Passado o "relacionamento" entre essa pessoa e a instituição de ensino, valida-se caso o `key`for valido e chama a classe `Factory`
+> E quando Passado o "relacionamento" entre essa pessoa e a instituição de ensino, valida-se caso o `key`for valido e chama a classe `Factory`
 
+Dentro da clase Factory, supondo que o user, entrou como `Aluno`, iremos chamar a classe: 
+```php 
+class AlunoFactory implements FATECRelationshipFactory
+```
+e criar um relacionamento com a classe:
+````php
+class Aluno implements FATECRelationship
+````
+
+que nos retorna:
+````php
+public function getRelationship(): string
+{
+    return "Aluno";
+}
+````
+
+e temos como resultado:
+````php
+$ Marcone tem relação com a instituição como Aluno
+$ Digite 'q' para sair ou qualquer outra tecla para continuar: 
+````
