@@ -89,7 +89,6 @@ public function getRelationship(): string
     return "Aluno";
 }
 ````
-
 e temos como resultado:
 ````php
 $ Marcone tem relação com a instituição como Aluno
