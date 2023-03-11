@@ -18,15 +18,15 @@ php index.php
 `````
 
 - Logo após, lhe será apresentado a seguinte pergunta:
-```php
+```shell
 $ Entre com o seu nome:  
 ```
 - e:
-````php
+````shell
 $ Digite a relação com a FATEC:
 ````
 - e como resultado teremos:
-````php
+````shell
 $ Marcone tem relação com a instituição como Aluno
 $ Digite 'q' para sair ou qualquer outra tecla para continuar: 
 ````
@@ -67,7 +67,7 @@ class RelationshipAnalyzer
     ... Restante da classe
 ````
 > Dentro dessa classe, existe uma validação da `key`, passada pelo usuário, quando há o preenchimento do: 
-````php
+````shell
 $ Digite a relação com a FATEC:
 ````
 
@@ -90,7 +90,7 @@ public function getRelationship(): string
 }
 ````
 e temos como resultado:
-````php
+````shell
 $ Marcone tem relação com a instituição como Aluno
 $ Digite 'q' para sair ou qualquer outra tecla para continuar: 
 ````
